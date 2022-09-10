@@ -46,11 +46,17 @@ parser.add_argument(
     type = int,
     choices = (1, 2, 3, 4)
 )
+parser.add_argument(
+    '-c',
+    '--cap_id',
+    help = 'Set ID of your video capture device. Default is 0.',
+    type = int
+)
 
 args = parser.parse_args()
 
 if args.version:
-    print('Version 1.0\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
+    print('Version 1.1\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
     exit(0)
 
 if args.fps_on:
@@ -97,7 +103,11 @@ if args.sensitivity:
 cv2.namedWindow('main', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('main', int(cam_w * 1.5), int(cam_h * 1.5))
 
-cap = cv2.VideoCapture(1)
+if args.cap_id:
+    cap = cv2.VideoCapture(args.cap_id)
+else:
+    cap = cv2.VideoCapture(0)
+
 cap.set(3, cam_w)
 cap.set(4, cam_h)
 
@@ -105,6 +115,9 @@ hands = mp_hands.Hands(max_num_hands = 1)
 mouse = Controller()
 
 while True:
+    if cv2.getWindowProperty('main', cv2.WND_PROP_VISIBLE) == 0:
+        cv2.destroyAllWindows()
+        break
     ret, frame = cap.read()
 
     frame_RGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
