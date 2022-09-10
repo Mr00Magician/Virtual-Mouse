@@ -97,7 +97,7 @@ if args.sensitivity:
 cv2.namedWindow('main', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('main', int(cam_w * 1.5), int(cam_h * 1.5))
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(3, cam_w)
 cap.set(4, cam_h)
 
@@ -152,7 +152,6 @@ while True:
                 if type(y_cursor) == complex:
                     y_cursor = scr_h - 10
 
-                print(index_tip.y)
                 ## smoothening
                 curr_mouse_x = prev_mouse_x + (x_cursor - prev_mouse_x)/smoothening 
                 curr_mouse_y = prev_mouse_y + (y_cursor - prev_mouse_y)/smoothening 
