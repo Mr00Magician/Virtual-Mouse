@@ -4,7 +4,7 @@
 <br>
   
 ## ABOUT THE APP
-Developed using OpenCV and Mediapipe, this app will allow you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. <br> <br>
+Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. <br> <br>
 
 ## HOW TO RUN
 To run this app, follow these simple steps:
