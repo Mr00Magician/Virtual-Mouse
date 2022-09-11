@@ -4,7 +4,7 @@
 <br>
   
 ## ABOUT THE APP
-Developed using OpenCV and Mediapipe, this app will allow you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. 
+Developed using OpenCV and Mediapipe, this app will allow you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. <br> <br>
 
 ## HOW TO RUN
 To run this app, follow these simple steps:
@@ -19,7 +19,7 @@ To run this app, follow these simple steps:
 The above steps will create a python virtual environment and install the required depndencies in it. Now whenever you want to run the app, follow these steps:
 - Open `command prompt` and `cd` to the directory where you have cloned the repo.
 - Activate the python environment by running the command `env\Scripts\activate.bat`.
-- Run the app by the command `Python Virtual_Mouse.py`.
+- Run the app by the command `Python Virtual_Mouse.py`. <br> <br>
 
 ## INSTRUCTIONS FOR USING THE APP
 Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
@@ -41,9 +41,16 @@ This mode will be triggered when your index finger and thumb are up while rest o
 ### Scrolling Mode
 This mode will be triggered when your index, ring and middle fingers are up while rest of the fingers are down. While in this mode, move your ring finger away from your middle finger to scroll up and move your index finger away from your middle finger to scroll down.
 
-SEE SCREENSHOTS FOR BETTER UNDERSTANDING OF DIFFERENT MODES
+See [SCREENSHOTS](#SCREENSHOTS) for better understanding of different modes. <br> <br>
 
-## SCREENSHOTS
+## CUSTOMISATION
+You can customise some aspects of this app based on your preferences. Few of the things you can change are:
+- Sensitivity of the cursor
+- Amount of smoothening applied to movement of cursor
+- Enable/Disbale FPS <br>
+To change these things, you can pass certain flags to this program when running it. Run the command `python Virtual_Mouse.py --help` to get help about how to use these flags and know about more customisation settings. <br> <br>
+
+<h2 id = "SCREENSHOTS">SCREENSHOTS</h2>
 
 |![Hand Detection](https://user-images.githubusercontent.com/92143521/189514478-a3d81356-e26b-4f6f-a39a-76743030fb60.png)|
 |:--:|
@@ -63,12 +70,12 @@ SEE SCREENSHOTS FOR BETTER UNDERSTANDING OF DIFFERENT MODES
 |![Scroll Up](https://user-images.githubusercontent.com/92143521/189514824-4da7de44-4407-4667-b680-3037d14a8a11.png)|
 |Scroll up by moving your ring finger away from Middle finger|
 |![Scroll Down](https://user-images.githubusercontent.com/92143521/189514879-4f01d021-bf01-4089-a128-3fc14282d3d3.png)|
-|Scroll Down by moving your index finger away from your middle finger|
+|Scroll Down by moving your index finger away from your middle finger| <br> <br>
 
 ## A GIF TO DEMONSTRATE WORKING
 |To be Added|
 |:--:|
-|Demo GIF|
+|Demo GIF| <br> <br>
 
 ## NOTE
 Sometimes the position of thumb is such that its hard to detect whether it is `up` or `down` as it doesn't actually go down like rest of the fingers. This may cause issues. So keep in mind that the correct position of thumb when it will be treated as `up` or `down` or not active is as follows:
