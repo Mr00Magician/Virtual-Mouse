@@ -88,7 +88,7 @@ To change these things, you can pass certain flags to this program when running 
 
 <h2 id ="GIF"> A GIF TO DEMONSTRATE WORKING </h2>
 
-|To be Added|
+|<img src="Assets/Demo GIF.gif">|
 |:--:|
 |Demo GIF| <br> <br>
 
