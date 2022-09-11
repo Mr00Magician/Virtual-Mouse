@@ -45,3 +45,36 @@ SEE SCREENSHOTS FOR BETTER UNDERSTANDING OF DIFFERENT MODES
 
 ## SCREENSHOTS
 
+|![Hand Detection](https://user-images.githubusercontent.com/92143521/189514478-a3d81356-e26b-4f6f-a39a-76743030fb60.png)|
+|:--:|
+|Hand Detection|
+|![Pointer Mode](https://user-images.githubusercontent.com/92143521/189514543-4cf30248-185d-4de3-a81e-0de066068679.png)|
+|Pointer Mode|
+|![Left Click Mode](https://user-images.githubusercontent.com/92143521/189514619-944268b0-aff3-4000-a09a-e45967a50dc5.png)|
+|Left Click Mode|
+|![Left Click Triggered](https://user-images.githubusercontent.com/92143521/189514701-54cd7cd4-1bd1-4cb9-9bfc-5a6df165e7f8.png)|
+|Bring fingers closer to trigger mouse left-click. The circle between the fingers will turn green when a click is triggered|
+|![Right Click Mode](https://user-images.githubusercontent.com/92143521/189514735-cf795679-b1c8-440f-89bf-bd721e8b85da.png)|
+|Right Click Mode|
+|![Right Click Triggered](https://user-images.githubusercontent.com/92143521/189514749-fea7170b-43b7-47e9-b4d9-5d51355f446b.png)|
+|Bring index finger and thumb closer to trigger mouse right-click. The circle between them will turn green when a click is triggered|
+|![Scrolling Mode](https://user-images.githubusercontent.com/92143521/189514796-d35650f8-4c09-4f51-841d-014825c311e2.png)|
+|Scrolling Mode|
+|![Scroll Up](https://user-images.githubusercontent.com/92143521/189514824-4da7de44-4407-4667-b680-3037d14a8a11.png)|
+|Scroll up by moving your ring finger away from Middle finger|
+|![Scroll Down](https://user-images.githubusercontent.com/92143521/189514879-4f01d021-bf01-4089-a128-3fc14282d3d3.png)|
+|Scroll Down by moving your index finger away from your middle finger|
+
+## A GIF TO DEMONSTRATE WORKING
+|To be Added|
+|:--:|
+|Demo GIF|
+
+## NOTE
+Sometimes the position of thumb is such that its hard to detect whether it is `up` or `down` as it doesn't actually go down like rest of the fingers. This may cause issues. So keep in mind that the correct position of thumb when it will be treated as `up` or `down` or not active is as follows:
+
+|![Thumb Up](https://user-images.githubusercontent.com/92143521/189515361-6e7651aa-e83b-4731-8326-a3ad4021c1c5.png)|
+|:--:|
+|Thumb Up|
+|![Thumb Down](https://user-images.githubusercontent.com/92143521/189515383-f6276c7f-5cb7-4c29-8c2b-0d6a8c3f1657.png)|
+|Thumb Down|
