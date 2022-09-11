@@ -30,16 +30,17 @@ This app works in 4 modes:
 - Scrolling Mode
 
 ### Pointer Mode
-This mode will be triggered when only your index finger is up, while the rest are down. In this mode you can move around your index finger to move the cursor on screen
+This mode will be triggered when only your index finger is up, while the rest are down. In this mode you can move around your index finger to move the cursor on screen. The red circle on the index finger indicates that you are in pointer mode.
 
 ### Left Click Mode
-This mode will be triggered when your index and middle fingers are up while rest are down. While in this mode, bring your index and middle fingers closer to perform a typical mouse left-click.
+This mode will be triggered when your index and middle fingers are up while rest are down. While in this mode, bring your index and middle fingers closer to perform a typical mouse left-click. The red circle on the index and the middle finger indicates that you are in left-click mode.
 
 ### Right Click Mode
-This mode will be triggered when your index finger and thumb are up while rest of the fingers are down. While in this mode, bring your index finger and thumb closer to perform a typical mouse right-click.
+This mode will be triggered when your index finger and thumb are up while rest of the fingers are down. While in this mode, bring your index finger and thumb closer to perform a typical mouse right-click. The red circle on the index finger and the thumb indicates that you are in right-click mode.
 
 ### Scrolling Mode
-This mode will be triggered when your index, ring and middle fingers are up while rest of the fingers are down. While in this mode, move your ring finger away from your middle finger to scroll up and move your index finger away from your middle finger to scroll down.
+This mode will be triggered when your index, ring and middle fingers are up while rest of the fingers are down. While in this mode, move your ring finger away from your middle finger to scroll up and move your index finger away from your middle finger to scroll down. The red circle on the index, ring and the middle finger indicates that you are in scrolling-click mode.
+
 
 See [SCREENSHOTS](#SCREENSHOTS) for better understanding of different modes. <br> <br>
 
