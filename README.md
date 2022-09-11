@@ -2,11 +2,22 @@
 <h3 align = "center">Made with :heart: and <img title = "Python" src = "https://user-images.githubusercontent.com/92143521/166102826-59081947-8e61-4e41-87d6-58ef893f0187.svg" height = "20px"> by Mr00Magician
 </h3>
 <br>
-  
-## ABOUT THE APP
+
+## FAST FORWARD
+- [About](#ABOUT)
+- [How to Run](#HOW-TO-RUN)
+- [Instructions](#INSTRUCTIONS)
+- [Customisation](#CUSTOMISATION)
+- [Screenshots](#SCREENSHOTS)
+- [Demo GIF](#GIF)
+- [Note](#NOTE)
+
+<h2 id ="ABOUT"> ABOUT THE APP </h2>
+
 Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. <br> <br>
 
-## HOW TO RUN
+<h2 id ="HOW-TO-RUN"> HOW TO RUN </h2>
+
 To run this app, follow these simple steps:
 - See that you have `Python` installed.
 - Clone this repository.
@@ -21,7 +32,8 @@ The above steps will create a python virtual environment and install the require
 - Activate the python environment by running the command `env\Scripts\activate.bat`.
 - Run the app by the command `Python Virtual_Mouse.py`. <br> <br>
 
-## INSTRUCTIONS FOR USING THE APP
+<h2 id ="INSTRUCTIONS"> INSTRUCTIONS ON HOW TO USE THE APP </h2>
+
 Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
 This app works in 4 modes:
 - Pointer Mode
@@ -44,7 +56,8 @@ This mode will be triggered when your index, ring and middle fingers are up whil
 
 See [SCREENSHOTS](#SCREENSHOTS) for better understanding of different modes. <br> <br>
 
-## CUSTOMISATION
+<h2 id = "CUSTOMISATION"> CUSTOMISATION </h2>
+
 You can customise some aspects of this app based on your preferences. Few of the things you can change are:
 - Sensitivity of the cursor
 - Amount of smoothening applied to movement of cursor
@@ -73,12 +86,14 @@ To change these things, you can pass certain flags to this program when running 
 |![Scroll Down](https://user-images.githubusercontent.com/92143521/189514879-4f01d021-bf01-4089-a128-3fc14282d3d3.png)|
 |Scroll Down by moving your index finger away from your middle finger| <br> <br>
 
-## A GIF TO DEMONSTRATE WORKING
+<h2 id ="GIF"> A GIF TO DEMONSTRATE WORKING </h2>
+
 |To be Added|
 |:--:|
 |Demo GIF| <br> <br>
 
-## NOTE
+<h2 id = "NOTE"> NOTE </h2>
+
 Sometimes the position of thumb is such that its hard to detect whether it is `up` or `down` as it doesn't actually go down like rest of the fingers. This may cause issues. So keep in mind that the correct position of thumb when it will be treated as `up` or `down` or not active is as follows:
 
 |![Thumb Up](https://user-images.githubusercontent.com/92143521/189515361-6e7651aa-e83b-4731-8326-a3ad4021c1c5.png)|
