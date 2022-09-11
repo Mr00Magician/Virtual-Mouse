@@ -34,7 +34,7 @@ The above steps will create a python virtual environment and install the require
 
 <h2 id ="INSTRUCTIONS"> INSTRUCTIONS ON HOW TO USE THE APP </h2>
 
-Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
+Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. By default, this app assumes that the distance between your hand and your webcam is about 50cm. If your webcam is closer, it is recommended to use [flags](#CUSTOMISATION) to customise it as per your preference. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
 This app works in 4 modes:
 - Pointer Mode
 - Left Click Mode
@@ -54,15 +54,17 @@ This mode will be triggered when your index finger and thumb are up while rest o
 This mode will be triggered when your index, ring and middle fingers are up while rest of the fingers are down. While in this mode, move your ring finger away from your middle finger to scroll up and move your index finger away from your middle finger to scroll down. The red circle on the index, ring and the middle finger indicates that you are in scrolling-click mode.
 
 
-See [SCREENSHOTS](#SCREENSHOTS) for better understanding of different modes. <br> <br>
+See [Screenshots](#SCREENSHOTS) for better understanding of different modes. If this app does not work properly for you, [customising](#CUSTOMISATION) it may remove any the problems that you face. <br> <br>
 
 <h2 id = "CUSTOMISATION"> CUSTOMISATION </h2>
 
-You can customise some aspects of this app based on your preferences. Few of the things you can change are:
+You can customise some aspects of this app based on your preferences by providing certain flags upon running the app. Few of the things you can change are:
+- Assumed distance between your hand and your webcam (This setting will greatly influence how effective your clicks are registered).
 - Sensitivity of the cursor
 - Amount of smoothening applied to movement of cursor
 - Enable/Disbale FPS <br>
-To change these things, you can pass certain flags to this program when running it. Run the command `python Virtual_Mouse.py --help` to get help about how to use these flags and know about more customisation settings. <br> <br>
+
+Run the command `python Virtual_Mouse.py --help` to get help about how to use these flags and know about more customisation settings. <br> <br>
 
 <h2 id = "SCREENSHOTS">SCREENSHOTS</h2>
 
