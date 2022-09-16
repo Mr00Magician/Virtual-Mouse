@@ -14,7 +14,7 @@
 
 <h2 id ="ABOUT"> ABOUT THE APP </h2>
 
-Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. <br> <br>
+Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. If you wish to have better FPS while using this app, use the [CUI based version](github.com/Mr00Magician/Virtual-Mouse/tree/CUI_based)<br> <br>
 
 <h2 id ="HOW-TO-RUN"> HOW TO RUN </h2>
 
@@ -30,11 +30,11 @@ To run this app, follow these simple steps:
 The above steps will create a python virtual environment and install the required depndencies in it. Now whenever you want to run the app, follow these steps:
 - Open `command prompt` and `cd` to the directory where you have cloned the repo.
 - Activate the python environment by running the command `env\Scripts\activate.bat`.
-- Run the app by the command `Python Virtual_Mouse.py`. <br> <br>
+- Run the app by the command `Python GUI_Virtual_Mouse.py`. <br> <br>
 
 <h2 id ="INSTRUCTIONS"> INSTRUCTIONS ON HOW TO USE THE APP </h2>
 
-Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. By default, this app assumes that the distance between your hand and your webcam is about 50cm. If your webcam is closer, it is recommended to use [flags](#CUSTOMISATION) to customise it as per your preference. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
+Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. By default, this app assumes that the distance between your hand and your webcam is about 30cm. This can be changed by using the [options menu](#CUSTOMISATION) to change the webcam distance as per your preference. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
 This app works in 4 modes:
 - Pointer Mode
 - Left Click Mode
@@ -58,13 +58,11 @@ See [Screenshots](#SCREENSHOTS) for better understanding of different modes. If 
 
 <h2 id = "CUSTOMISATION"> CUSTOMISATION </h2>
 
-You can customise some aspects of this app based on your preferences by providing certain flags upon running the app. Few of the things you can change are:
+You can customise some aspects of this app based on your preferences by using the options menu that appears on the top left corner of the window upon running the app. Few of the things you can change are:
 - Assumed distance between your hand and your webcam (This setting will greatly influence how effective your clicks are registered).
 - Sensitivity of the cursor
 - Amount of smoothening applied to movement of cursor
-- Enable/Disbale FPS <br>
-
-Run the command `python Virtual_Mouse.py --help` to get help about how to use these flags and know about more customisation settings. <br> <br>
+- Enable/Disbale FPS <br> <br>
 
 <h2 id = "SCREENSHOTS">SCREENSHOTS</h2>
 
