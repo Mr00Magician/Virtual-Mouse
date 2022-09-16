@@ -8,6 +8,15 @@ from mediapipe.python.solutions import hands as mp_hands, drawing_styles, drawin
 
 parser = argparse.ArgumentParser()
 
+def webcam_distance(arg):
+    try:
+        value = int(arg)
+    except ValueError:
+        raise argparse.ArgumentTypeError('Value must be an integer')
+    if value < 10 or value > 100:
+        raise argparse.ArgumentTypeError('Value must be between 10 and 100 (both inclusive)')
+    return value
+
 parser.add_argument(
     '-f',
     '--fps_on',
@@ -19,22 +28,22 @@ parser.add_argument(
     '--smooth',
     help = 'Default smooth_value is 3.5. Providing a higher value to this argument will result in a higher delay in cursor movement but lesser shakiness, and vice - versa',
     type = float,
+    default = 3.5,
     metavar = '<smooth_value>'
 )
 parser.add_argument(
     '-v',
     '--version',
-    help = "Show this software's version info",
+    help = "Show this software's version info and exit",
     action = 'store_true'
 )
 
 parser.add_argument(
-    '-i',
-    '--inc_register_dist',
-    help = '''Recommended to use this option if you are less than about 50cm away from your webcam. 
-        This flag increases the minimum distance required between certain combination of fingers to 
-        trigger a mouse action. You can pass this flag multiple times such as "-iii" to further its effect.''',
-    action = 'count'
+    '-w',
+    '--webcam_dist',
+    help = '''Approx distance of your webcam from your hand in centimetre. Default is 30''',
+    type = webcam_distance,
+    default = 30,
 )
 
 parser.add_argument(
@@ -43,19 +52,21 @@ parser.add_argument(
     help = '''Change sensitivity of the virtual mouse. This will also effect the boundary within which 
         you can point your finger and move the cursor. Default value is 2''',
     type = int,
+    default = 2,
     choices = (1, 2, 3, 4)
 )
 parser.add_argument(
     '-c',
     '--cap_id',
     help = 'Set ID of your video capture device. Default is 0.',
+    default = 0,
     type = int
 )
 
 args = parser.parse_args()
 
 if args.version:
-    print('Version 1.1\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
+    print('v0.1.0\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
     exit(0)
 
 if args.fps_on:
@@ -74,38 +85,22 @@ cam_w, cam_h = int(640), int(480)
 ptime = 0
 curr_mouse_x, curr_mouse_y = 0, 0
 prev_mouse_x, prev_mouse_y = 0, 0
-smoothening = 3.5
-if args.smooth:
-    smoothening = args.smooth
 
-left_click_reg_dist = 20
-right_click_reg_dist = 14
-scroll_reg_dist = 40
-if args.inc_register_dist:
-    for i in range(args.inc_register_dist):
-        left_click_reg_dist += 10
-        right_click_reg_dist += 10
-        scroll_reg_dist += 10
-reg_distances = [left_click_reg_dist, right_click_reg_dist, scroll_reg_dist]
+smoothening = args.smooth
 
-detection_margin_left = 350
-detection_margin_right = 100
-detection_margin_up = 100
-detection_margin_down = 200
+left_click_reg_dist = 12 + 0.25 * (100 - args.webcam_dist)
+right_click_reg_dist = 16 + 0.25 * (100 - args.webcam_dist) 
+scroll_reg_dist = 40 + 0.4 * (100 - args.webcam_dist)
 
-if args.sensitivity:
-    detection_margin_left += (args.sensitivity - 2) * 25
-    detection_margin_right += (args.sensitivity - 2) * 25
-    detection_margin_up += (args.sensitivity - 2) * 15
-    detection_margin_down += (args.sensitivity - 2) * 15
+detection_margin_left = 350 + (args.sensitivity - 2) * 25
+detection_margin_right = 100 + (args.sensitivity - 2) * 25
+detection_margin_up = 100 + (args.sensitivity - 2) * 15
+detection_margin_down = 200 + (args.sensitivity - 2) * 15
 
 cv2.namedWindow('main', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('main', int(cam_w * 1.5), int(cam_h * 1.5))
 
-if args.cap_id:
-    cap = cv2.VideoCapture(args.cap_id)
-else:
-    cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(args.cap_id)
 
 cap.set(3, cam_w)
 cap.set(4, cam_h)
