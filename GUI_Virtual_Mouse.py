@@ -35,7 +35,7 @@ smoothness.set(3.5)
 sensitivity = tk.IntVar()
 sensitivity.set(2)
 webcam_distance = tk.IntVar()
-webcam_distance.set(100)
+webcam_distance.set(30)
 
 left_click_reg_dist = 12
 right_click_reg_dist = 18
