@@ -14,7 +14,7 @@
 
 <h2 id ="ABOUT"> ABOUT THE APP </h2>
 
-Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. If you wish to have better FPS while using this app, use the [CUI based version](github.com/Mr00Magician/Virtual-Mouse/tree/CUI_based)<br> <br>
+Developed using OpenCV and Mediapipe, this app will allow you to use your computer without a physical mouse by allowing you to perform basic mouse operations by using certain hand gestures and movements in front of your webcam. If you wish to have better FPS while using this app, use the [CUI based version](https://github.com/Mr00Magician/Virtual-Mouse/tree/CUI_based)<br> <br>
 
 <h2 id ="HOW-TO-RUN"> HOW TO RUN </h2>
 
