@@ -20,7 +20,7 @@ Developed using OpenCV and Mediapipe, this app will allow you to use your comput
 
 To run this app, follow these simple steps:
 - See that you have `Python` installed.
-- Clone this repository.
+- Clone this branch (or this repository if you wish to, but then do switch to this branch before carrying out the steps below).
 - Create a new Python environment and install the dependencies in it. This can be done as follows:
   - Open `command prompt` and `cd` to the directory where you have cloned the repo.
   - Run the command `Python -m venv env` to create a new virtual environment named `env`
