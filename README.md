@@ -18,9 +18,9 @@ Developed using OpenCV and Mediapipe, this app will allow you to use your comput
 
 <h2 id ="HOW-TO-RUN"> HOW TO RUN </h2>
 
-To run this app, follow these simple steps:
+To run this app, you can download the [latest release](https://github.com/Mr00Magician/Virtual-Mouse/releases/tag/v0.1.0) where you will find a .exe file. Run the .exe file and that's it! However if you wish to use the source code to run the app, follow these simple steps:
 - See that you have `Python` installed.
-- Clone this repository.
+- Clone this branch (or the repository if you wish to).
 - Create a new Python environment and install the dependencies in it. This can be done as follows:
   - Open `command prompt` and `cd` to the directory where you have cloned the repo.
   - Run the command `Python -m venv env` to create a new virtual environment named `env`
