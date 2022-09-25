@@ -21,7 +21,7 @@ cam_w, cam_h = int(640), int(480)
 
 root = tk.Tk()
 root.geometry(f'{int(cam_w * 1.5)}x{int(cam_h * 1.5)}')
-root.title('Virtual Mouse v0.1.0')
+root.title('Virtual Mouse v0.2.0')
 
 label = tk.Label(root)
 label.pack(fill = 'both', expand = tk.YES)
