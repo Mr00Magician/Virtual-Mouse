@@ -34,7 +34,7 @@ The above steps will create a python virtual environment and install the require
 
 <h2 id ="INSTRUCTIONS"> INSTRUCTIONS ON HOW TO USE THE APP </h2>
 
-Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. By default, this app assumes that the distance between your hand and your webcam is about 50cm. If your webcam is closer, it is recommended to use [flags](#CUSTOMISATION) to customise it as per your preference. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
+Upon running the app, your webcam will be turned on and will be used to track your hand and fingers. By default, this app assumes that the distance between your hand and your webcam is about 20cm. If your webcam is closer, it is recommended to use [flags](#CUSTOMISATION) to customise it as per your preference. As of now, you can only use your right hand to use this app. Support for left hand is coming soon.
 This app works in 4 modes:
 - Pointer Mode
 - Left Click Mode
