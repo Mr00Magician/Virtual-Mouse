@@ -66,7 +66,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 if args.version:
-    print('v0.1.0\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
+    print('v0.2.0\nVirtual Mouse\nDeveloper: Mohd Anas Nadeem')
     exit(0)
 
 if args.fps_on:
