@@ -43,7 +43,7 @@ parser.add_argument(
     '--webcam_dist',
     help = '''Approx distance of your webcam from your hand in centimetre. Default is 30''',
     type = webcam_distance,
-    default = 30,
+    default = 20,
 )
 
 parser.add_argument(
