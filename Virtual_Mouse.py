@@ -88,8 +88,8 @@ prev_mouse_x, prev_mouse_y = 0, 0
 
 smoothening = args.smooth
 
-left_click_reg_dist = 12 + 0.35 * (100 - args.webcam_dist)
-right_click_reg_dist = 16 + 0.20 * (100 - args.webcam_dist) 
+left_click_reg_dist = 12 + 0.40 * (100 - args.webcam_dist)
+right_click_reg_dist = 16 + 0.30 * (100 - args.webcam_dist) 
 scroll_reg_dist = 40 + 0.4 * (100 - args.webcam_dist)
 
 detection_margin_left = 350 + (args.sensitivity - 2) * 25
