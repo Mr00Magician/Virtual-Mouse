@@ -35,7 +35,7 @@ smoothness.set(3.5)
 sensitivity = tk.IntVar()
 sensitivity.set(2)
 webcam_distance = tk.IntVar()
-webcam_distance.set(30)
+webcam_distance.set(20)
 
 left_click_reg_dist = 12
 right_click_reg_dist = 18
@@ -137,7 +137,7 @@ Webcam_dist_menu.add_radiobutton(label = 50, variable = webcam_distance, value =
 
 options_menu.add_checkbutton(label = 'FPS', variable = fps_on, onvalue = True, offvalue = False)
 options_menu.add_cascade(label = 'smoothness', menu = smoothness_menu)
-options_menu.add_cascade(label = 'Min Webcam Distance', menu = Webcam_dist_menu)
+options_menu.add_cascade(label = 'Webcam Distance', menu = Webcam_dist_menu)
 options_menu.add_cascade(label = 'Sensitivity', menu = sensitivity_menu)
 options_menu.add_command(label = 'Cap Device ID', command = lambda : custom_entry_dialog(cap_id))
 
@@ -160,8 +160,8 @@ mouse = Controller()
 def show_image():
     global ptime, prev_mouse_x, prev_mouse_y
 
-    left_click_reg_dist = 12 + 0.25 * (100 - webcam_distance.get())
-    right_click_reg_dist = 16 + 0.25 * (100 - webcam_distance.get()) 
+    left_click_reg_dist = 12 + 0.40 * (100 - webcam_distance.get())
+    right_click_reg_dist = 16 + 0.45 * (100 - webcam_distance.get()) 
     scroll_reg_dist = 40 + 0.4 * (100 - webcam_distance.get())
 
     detection_margin_left = 350 + (sensitivity.get() - 2) * 25
@@ -232,7 +232,6 @@ def show_image():
                 cv2.line(frame_BGR, (x_index, y_index), (x_middle, y_middle), (100, 0, 255), 3)
                 cv2.circle(frame_BGR, ((x_index + x_middle)//2, (y_index + y_middle)//2), 10, (100, 0, 255), cv2.FILLED)
 
-                print(x_index - x_middle)
                 if x_index - x_middle < left_click_reg_dist:
                     cv2.circle(frame_BGR, ((x_index + x_middle)//2, (y_index + y_middle)//2), 10, (0, 255, 0), cv2.FILLED)
                     mouse.click(Button.left)
