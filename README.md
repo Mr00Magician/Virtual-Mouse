@@ -4,6 +4,7 @@
 <br>
 
 ## FAST FORWARD
+- [Teck Stack](#STACK)
 - [About](#ABOUT)
 - [How to Run](#HOW-TO-RUN)
 - [Instructions](#INSTRUCTIONS)
@@ -11,6 +12,12 @@
 - [Screenshots](#SCREENSHOTS)
 - [Demo GIF](#GIF)
 - [Note](#NOTE)
+
+<h2 id ="STACK"> TECH STACK </h2>
+
+| ![icons8-opencv-48](https://github.com/Mr00Magician/Number-Recogniser/assets/92143521/ef53804d-2f32-4c09-9daa-0f1b4f799827) | <img src="https://github.com/Mr00Magician/Virtual-Mouse/assets/92143521/1da6e028-ef14-4dc2-80de-afb545877257" height="48px"> | <img src ="https://github.com/Mr00Magician/Virtual-Mouse/assets/92143521/35af1458-b9de-4d5d-bd1d-0d49fa8cad9e" height="48px"> | <img src="https://github.com/Mr00Magician/Number-Recogniser/assets/92143521/f9a0fb21-2baf-4656-8dce-009f0b722184" height="48px"> |
+| :--: | :--: | :--: | :--: |
+| OpenCV | Mediapipe | Pillow | Python |
 
 <h2 id ="ABOUT"> ABOUT THE APP </h2>
 
